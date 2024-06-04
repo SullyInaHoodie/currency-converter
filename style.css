@@ -1,0 +1,58 @@
+body {
+    background-color: #2a5751; /* A cooler, more vibrant teal shade */
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #49a193; /* A deep teal color for better contrast */
+    color: #E0F2F1; /* A light teal shade for text, improves readability */
+    padding: 20px;
+    border-radius: 8px; /* Slightly larger radius for smoother edges */
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4); /* More pronounced shadow for 3D effect */
+    width: 350px; /* Ensuring the container is not too wide */
+    transition: transform 0.3s ease-in-out; /* Smooth transformation for interactive feel */
+}
+
+.container:hover {
+    transform: scale(1.02); /* Slight scale up on hover for interactive feel */
+}
+
+.currency-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Spacing between rows */
+}
+
+.currency-container select,
+.currency-container input {
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #B2DFDB; /* Lighter border for elements */
+    border-radius: 5px;
+    font-size: 16px; /* Adjust font size for better legibility */
+    color: #000000; /* Text color */
+}
+
+.currency-container input {
+    flex-grow: 1; /* Input takes available horizontal space */
+    text-align: right;
+}
+
+.exchange-rate {
+    font-size: 14px; /* Slightly smaller font size for subtlety */
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+select:focus,
+input:focus {
+    outline: none;
+    border-color: #000000; /* Softer focus color */
+}
